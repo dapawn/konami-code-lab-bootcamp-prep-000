@@ -5,10 +5,7 @@ function init() {
   // Keep track of index outside of the event handler.
   let index = 0;
 
-  window.addEventListener('keydown', KeyDownHandler(event) )
-
-  // This is the function that would be invoked by the event listener.
-  function KeyDownHandler(e) {
+  window.addEventListener('keydown', function(e) {
     const key = parseInt(e.detail || e.location || e.which);
 
     if (key === code[index]) {
@@ -22,7 +19,7 @@ function init() {
     } else {
       index = 0;
     }
-  }
+  });
 
 
 }
