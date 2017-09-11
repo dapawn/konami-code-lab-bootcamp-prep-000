@@ -5,7 +5,7 @@ function init() {
   // Keep track of index outside of the event handler.
   let index = 0;
 
-  window.addEventListener('keydown', KeyDownHandler(e) )
+  window.addEventListener('keydown', KeyDownHandler(event) )
 
   // This is the function that would be invoked by the event listener.
   function KeyDownHandler(e) {
